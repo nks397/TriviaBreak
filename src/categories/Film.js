@@ -22,10 +22,12 @@ function Film() {
     const [answerChoices, setAnswerChoices] = useState("")
     const [answerShuffle, setAnswerShuffle] = useState("")
     const [score, setScore] = useState(0)
+
     // const [isToggled, setIsToggled] = useState(false)
 //  add confetti when quiz in completed
 // try to display results
 // try to move stuff to context
+
     useEffect(()=>{
         axios.get("https://opentdb.com/api.php?amount=15&category=11&difficulty=medium&type=multiple")
         .then(res => res.data)
@@ -59,8 +61,11 @@ function Film() {
         })
     },[])
 
-    console.log(answerChoices, "answerChoices")
-    console.log(answerShuffle, "answerShuffle")
+        console.log("Incorrect Array:", incorrectArr)
+        console.log("Answer Choices:", answerChoices)
+
+    // console.log(answerChoices, "answerChoices")
+    // console.log(answerShuffle, "answerShuffle")
      
     function handleRightAns(answer, index) {
         if(answer.value === correctAnswer[currentQuestion]){
