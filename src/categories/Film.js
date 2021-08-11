@@ -61,9 +61,6 @@ function Film() {
         })
     },[])
 
-        console.log("Incorrect Array:", incorrectArr)
-        console.log("Answer Choices:", answerChoices)
-
     // console.log(answerChoices, "answerChoices")
     // console.log(answerShuffle, "answerShuffle")
      
