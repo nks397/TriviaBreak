@@ -151,7 +151,7 @@ function Film() {
                 <div className="display-container">
                     <div className="completed">Quiz Completed!</div>
                     <div className="score-container">
-                        <h2 style={{paddingBottom:"20px"}}>Score: {score}/{length}</h2>
+                        <h2 style={{paddingBottom:"2vh"}}>Score: {score}/{length}</h2>
                         <h2 style={{fontSize: "18px", paddingTop:"15px"}}>Want to play again? Feel free to replay this category or choose another category.</h2>
                         <button onClick={()=>reset()}>Replay Category</button>
                         {/* <button onClick={()=>toggle()}>{isToggled ? "Hide Results" : "View Results"}</button> */}

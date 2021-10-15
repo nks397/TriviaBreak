@@ -1,17 +1,17 @@
 * {
     margin: 0px;
+    box-sizing: border-box;
     text-align: center;
     
 }
 
 nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    height: 40px;
-    padding: 10px 100px;
-    font-size: 20px;
+    height: 7vh;
+    width: 100%;
+    /* padding: 0px 10px; */
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     background-color: black;
@@ -21,6 +21,7 @@ nav {
 a {
     text-decoration: none;
     color: white;
+    font-size: 3vh;
 
 }
 
@@ -28,10 +29,11 @@ a:hover {
     color: purple;
     transition: all 0.3s ease-in-out;
 }
-.home:hover, .categories:hover, .about:hover {
-    border: white solid 0.5px;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .film:hover, .music:hover, .sports:hover {
@@ -40,9 +42,10 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.185);
 }
 
-.home-container {
-    height: 542px;
-}
+/* .home-container, .category-container, .about-container {
+    /* height: 542px; */
+    /* height: 87vh;
+}  */
 
 .home-subtitle-container {
     display: flex;
@@ -51,19 +54,20 @@ a:hover {
 
 .home-title {
     font-family: 'Monofett', cursive;
-    font-size: 70px;
+    font-size: 6vh;
     color: black;
-    padding-top: 140px;
+    padding-top: 16vh;
+    /* padding-bottom: 40px; */
+    padding-bottom: 7vh;
 }
 
 .home-subtitle {
-    padding-top: 40px;
-    margin-left: 500px;
-    margin-right: 500px;
-}
-
-.category-container {
-    height: 542px;
+    font-size: 3vh;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
 }
 
 .category-list {
@@ -72,47 +76,49 @@ a:hover {
 }
 
 .category-title{
-    font-size: 35px;
-    padding-top: 150px;
+    font-size: 4vh;
+    padding-top: 20vh;
     padding-bottom: 20px;
     font-family: 'Bungee Shade', cursive;
 }
 
 .group-titles {
-    padding-top: 55px;
-    padding-bottom: 10px;
+    padding-top: 10vh;
+    padding-bottom: 3vh;
     font-family: 'Bungee Shade', cursive;
+    font-size: 5vh;
 }
 
 .question-number {
-    padding-bottom: 20px;
+    padding-bottom: 7vh;
     font-family: 'Open Sans', sans-serif;
+    font-size: 5.5vh;
 }
 
 .questions {
-    padding-bottom: 40px;
-    padding-top: 10px;
+    padding-bottom: 4vh;
+    /* padding-top: 10px; */
     font-family: 'Open Sans', sans-serif;
+    font-size: 5vh;
 }
 
 .answers {
     margin-bottom: 20px;
     font-family: 'Open Sans', sans-serif;
     font: bolder;
+    font-size: 2.8vh;
 }
 
 button {
     font-family: 'Open Sans', sans-serif;
+    margin-top: 3vh;
+    font-size: 2.8vh;
 }
 
 .answers:hover, button:hover{
     color: purple;
     font: bolder;
     transition: all 0.3s ease-in-out;
-}
-
-.trivia-container {
-    height: 542px;
 }
 
 .film-title {
@@ -143,23 +149,31 @@ button {
 
 .completed {
     font-family: 'Bungee Shade', cursive;
-    font-size: 50px;
+    font-size: 6vh;
     font: bolder;
-    margin-top: 150px;
+    margin-top: 12vh;
 }
 
 .score-container {
-    font-size: 30px;
+    font-size: 5vh;
     font-family: 'Open Sans', sans-serif;
 }
 
 .about-container {
-    padding-top: 0px;
-    height: 380px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin-right:  300px;
-    margin-left: 300px;
+    /* padding-top: 0px;
+    padding-bottom: 6px;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    height: 50vh;
+    overflow: hidden;
+    /* height: 380px; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* margin-top: 10vh; */
+    /* margin-bottom: 140px; */
+    /* margin-right:  50px;
+    margin-left: 50px;
     background-color: white;
     width: [object Object]px; 
 	height: [object Object]px; 
@@ -168,21 +182,44 @@ button {
     border-radius: 30px;
 	box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5)  ; 
 	-webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5)  ; 
-	-moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5)  ;  */
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 380px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-right: 5vh;
+    margin-left: 5vh;
+    background: #F8F8F8;
+    border: solid #BDBDBD 1px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 6px rgb(0 0 0 / 50%);
 }
 
+.about-subtitle-container::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+}
+    
+.about-subtitle-container::-webkit-scrollbar-thumb {
+    background: rgb(212, 112, 112);  
+    border-radius: 10px;
+}     
+
 .about-title {
-    padding-top: 40px;
-    padding-bottom: 30px;
-    font-size: 30px;
+    /* padding-top: 40px; */
+    padding-top: 7vh;
+    font-size: 4vh;
     font-family: 'Bungee Shade', cursive;
 }
 
 .about-subtitle {
-    font-size: 22px;
-    margin-left: 150px;
-    margin-right: 150px;
+    font-size: 2.5vh;
     font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+
 }
 
 main {
@@ -190,6 +227,8 @@ main {
     flex-direction: column;
     align-items: center;
     background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
+    width: 100%;
+    height: 86vh;
 }
 
 footer {
@@ -197,8 +236,9 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 35px;
-    padding: 10px 0px;
+    /* height: 35px; */
+    /* height: 7vh; */
+    padding: 6px 0px;
     width: auto;
     font-family: 'Playfair Display', serif;
     font-size: 25px;
@@ -207,6 +247,7 @@ footer {
 
 .facebook, .twitter, .instagram, .tumblr, .reddit {
     color: white;
+    font-size: 5vh;
 }
 
 .facebook:hover, .twitter:hover, .instagram:hover, .tumblr:hover, .reddit:hover {
@@ -235,43 +276,16 @@ footer {
 }
 
 @media (max-width: 1200px){
-    .about-container{
-        width: 450px;
-        height: 370px;
-    }
-
-    .trivia-container {
-        width: 450px;
-        height: 370px;
-    }
-
-    .home-subtitle {
-        margin-left: 150px;
-        margin-right: 150px;
-        font-size: 20px;
-    }
-
     .home-title {
         padding-top: 90px;
     }
 
-    .home-container {
-        height: 532px;
-    }
-
-    .about-subtitle {
-        font-size: 20px;
-        margin-left: 50px;
-        margin-right: 50px;
-    } 
-
     .answers {
     margin-bottom: 5px;
-    
     }
 
     .questions {
-        padding-bottom: 15px;
+        /* padding-bottom: 15px; */
         margin-top: -10px;
     }
 
@@ -279,26 +293,21 @@ footer {
         font-size: 15px;
         
     }
-    
-    .completed {
-        font-size: 40px;
-        
-    }
-    
-    .score-container {
-        font-size: 25px;
-    }
-    
-    .trivia-container {
-       height: 532px; 
-    }
-
-    .category-container {
-        height: 532px;
-    }
 
     .display-container {
         height: 382px;
     }
     
+}
+
+@media (max-width: 1030px){
+    .about-container {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 800px){
+    .about-container {
+        height: 65vh;
+    }
 }
