@@ -42,11 +42,6 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.185);
 }
 
-/* .home-container, .category-container, .about-container {
-    /* height: 542px; */
-    /* height: 87vh;
-}  */
-
 .home-subtitle-container {
     display: flex;
     font-family: 'Open Sans', sans-serif;
@@ -97,7 +92,6 @@ a:hover {
 
 .questions {
     padding-bottom: 4vh;
-    /* padding-top: 10px; */
     font-family: 'Open Sans', sans-serif;
     font-size: 5vh;
 }
@@ -207,7 +201,6 @@ button {
 }     
 
 .about-title {
-    /* padding-top: 40px; */
     padding-top: 7vh;
     font-size: 4vh;
     font-family: 'Bungee Shade', cursive;
@@ -285,7 +278,6 @@ footer {
     }
 
     .questions {
-        /* padding-bottom: 15px; */
         margin-top: -10px;
     }
 
