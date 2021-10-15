@@ -172,8 +172,8 @@ function Film() {
                     <h2 className="question-number">Question {currentQuestion + 1} of {length}</h2>
                     <h3 className="questions">{decodedQuestions()}</h3>
                     <h3 className="answers"> {decodedAnswers()}</h3>
-                    <button onClick={handlePrevBtn}><i class="fas fa-chevron-circle-left"></i> Previous</button>
-                    <button onClick={handleNextBtn}>Next <i class="fas fa-chevron-circle-right"></i></button>
+                    <button onClick={handlePrevBtn}><i className="fas fa-chevron-circle-left"></i> Previous</button>
+                    <button onClick={handleNextBtn}>Next <i className="fas fa-chevron-circle-right"></i></button>
                 {/* </div> */}
             </div>
             )}

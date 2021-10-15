@@ -7,13 +7,13 @@ function Categories() {
             <h3 className="category-title">Choose your category</h3>
             <div className="category-list">
                 <h3 className="film">
-                    <Link to="/film"><i class="fas fa-film"></i> Film</Link>
+                    <Link to="/film"><i className="fas fa-film"></i> Film</Link>
                 </h3>
                 <h3 className="music">
-                    <Link to="/music"><i class="fas fa-music"></i> Music</Link>
+                    <Link to="/music"><i className="fas fa-music"></i> Music</Link>
                 </h3>
                 <h3 className="sports">
-                    <Link to="/sports"><i class="fas fa-football-ball"></i> Sports</Link>
+                    <Link to="/sports"><i className="fas fa-football-ball"></i> Sports</Link>
                 </h3>
             </div>
         </div>
