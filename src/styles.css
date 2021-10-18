@@ -103,11 +103,6 @@ a:hover {
     font-size: 2.8vh;
 }
 
-.trivia-container {
-
-    padding-bottom: 3vh;
-}
-
 button {
     font-family: 'Open Sans', sans-serif;
     margin-top: 3vh;
@@ -226,7 +221,7 @@ main {
     align-items: center;
     background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
     width: 100%;
-    height: 110vh;
+    height: 100vh;
 }
 
 footer {
